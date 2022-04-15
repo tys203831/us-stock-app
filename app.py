@@ -56,3 +56,10 @@ with st.container():
             st.write("""
             This is my first test to display my projects.
             """)
+
+# -- add dataframe ---
+from .model import us_stocks
+
+with st.container():
+    st.write("---")
+    st.write(us_stocks.hist)

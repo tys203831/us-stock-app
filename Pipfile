@@ -7,6 +7,8 @@ name = "pypi"
 streamlit = "*"
 requests = "*"
 streamlit-lottie = "*"
+pandas = "*"
+yfinance = "*"
 
 [dev-packages]
 
