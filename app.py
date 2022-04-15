@@ -58,7 +58,7 @@ with st.container():
             """)
 
 # -- add dataframe ---
-from .model import us_stocks
+from model import us_stocks
 
 with st.container():
     st.write("---")
