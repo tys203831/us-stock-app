@@ -62,4 +62,10 @@ from model import us_stocks
 
 with st.container():
     st.write("---")
+    st.header("Stock History Data")
     st.write(us_stocks.hist)
+    st.markdown("""
+            <p>This is a test</p>
+            <img src="./images/bird.png" alt="this is from unsplash"/>
+            """, unsafe_allow_html=True)
+
