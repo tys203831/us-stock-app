@@ -32,7 +32,7 @@ with st.container():
     left_column, right_column = st.columns(2)
     #--- ADD CONTENT INTO LEFT COLUMN ---  
     with left_column:
-        #st.write("##")
+        st.write("##")
         st.write("""
                 I am trying to learn as much as possible, hoping that I would be able to integrate my skills.
                 I could complete all my tasks through continuing my efforts to do something that I like.
