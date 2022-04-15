@@ -1,5 +1,6 @@
 import streamlit as st
 import requests
+from streamlit_lottie import st_lottie
 
 st.set_page_config(page_title="My Website", page_icon=":wave:", layout="wide")
 
@@ -11,13 +12,13 @@ with st.container():
     st.write("[Learn more here:](https://tanyongsheng.xyz)")
 
 # --- LOAD ASSET ---
-lottie_coding = "https://assets8.lottiefiles.com/packages/lf20_tno6cg2w.json"
-
 def load_lottieurl(url):
-    image = requests.get(lottie_coding)
+    image = requests.get(url)
     if image.status_code !=200:
         return None
     return image.json()
+
+lottie_coding = load_lottieurl("https://assets8.lottiefiles.com/packages/lf20_tno6cg2w.json")
 
 # ---- BODY SECTION ------
 with st.container():
@@ -32,8 +33,7 @@ with st.container():
                 I could complete all my tasks through continuing my efforts to do something that I like.
                 """)
         st.write("[Affiliate website >](https:pickufly.com)")
-    # 
-
+    
+    # ADD ANIMATION to the right column
     with right_column:
-        st.write(load_lottieurl(lottie_coding))
-        
+        st_lottie(lottie_coding, height=300, key="coding")
