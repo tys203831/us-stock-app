@@ -56,6 +56,7 @@ with st.container():
             st.write("""
             This is my first test to display my projects.
             """)
+        
 
 # -- add dataframe ---
 from model import us_stocks
@@ -64,6 +65,7 @@ with st.container():
     st.write("---")
     st.header("Stock History Data")
     st.write(us_stocks.hist)
+    st.line_chart(us_stocks.hist.loc[:,"Close"])
     st.markdown("""
             <p>This is a test</p>
             <img src="./images/bird.png" alt="this is from unsplash"/>
