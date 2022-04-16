@@ -9,6 +9,7 @@ requests = "*"
 streamlit-lottie = "*"
 pandas = "*"
 yfinance = "*"
+streamlit-option-menu = "*"
 
 [dev-packages]
 
