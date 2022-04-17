@@ -2,5 +2,5 @@
     "name": "Python Streamlit to Heroku template",
     "stack": "heroku-20",
     "description": "A template of Streamlit app deployed to heroku", 
-    "respository": "https://github.com/tys203831/streamlit-heroku"
+    "respository": "https://github.com/tys203831/us-stock-app"
 }
